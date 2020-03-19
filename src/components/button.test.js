@@ -4,9 +4,7 @@ import {shallow} from 'enzyme';
 import Button from './button';
 
 describe('<Button />', () => {
-    it("Renders correctly in DOM", () => {
-        ReactDOM.render(<button></button>);
-    });
+   
     it('Should call props.onClick when the button is clicked', () => {
         const mockCallBack = jest.fn();
         
