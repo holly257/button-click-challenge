@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "react-test-renderer": "^16.13.1"
   },
   "dependencies": {
     "babel-jest": "^25.1.0",
@@ -19,9 +22,7 @@
     "test": "jest",
     "eject": "react-scripts eject"
   },
-  "jest": {
-    "setupFilesAfterEnv": [
-      "/Users/hollyrogers/thinkful/react/react-button-click-test-challenge/src/components/test-setup.js"
-    ]
+  "jest": { 
+    "setupFilesAfterEnv": ["<rootDir>/setupTests.js"] 
   }
 }
